@@ -25,7 +25,7 @@ namespace jwt_auth.Controllers
 
                 UserToken userToken = new UserToken()
                 {
-                    Status = "Success",
+                    Status = Status.Success,
                     Message = "User is valid",
                     Role = role,
                     Token = TokenManager.GenerateToken(user.Username, role),
@@ -38,7 +38,7 @@ namespace jwt_auth.Controllers
             {
                 UserToken userToken = new UserToken()
                 {
-                    Status = "Invalid User",
+                    Status = Status.InvalidUser,
                     Message = "User is invalid",
                 };
 
@@ -68,7 +68,7 @@ namespace jwt_auth.Controllers
                         {
                             return Ok(new UserToken
                             {
-                                Status = "Success",
+                                Status = Status.Success,
                                 Message = "Token is valid",
                                 Token = token,
                                 Username = tokenInfo.Item1,
@@ -90,7 +90,7 @@ namespace jwt_auth.Controllers
 
             UserToken userToken = new UserToken()
             {
-                Status = "Invalid Token",
+                Status = Status.InvalidToken,
                 Message = "Token is invalid",
             };
 
