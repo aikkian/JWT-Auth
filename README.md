@@ -25,7 +25,7 @@ The `AuthenticationController` encompasses the login and validation APIs that we
         }
         ```
 
-    * Response Example:
+    * Response Body Example:
 
         ```json
 	{
@@ -45,7 +45,7 @@ The `AuthenticationController` encompasses the login and validation APIs that we
 
         `Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InN1ZWx5bm4iLCJyb2xlIjpbIlNlbmlvciBTb2Z0d2FyZSBFbmdpbmVlciIsIlByb2R1Y3QgT3duZXIiXSwibmJmIjoxNjk0NTMxNDAxLCJleHAiOjE2OTQ1MzMyMDEsImlhdCI6MTY5NDUzMTQwMX0.qqVN-K0AjVzefvvTIZvDxkVWhr_E4FnYfyJ5CwUmdgs`
 
-    * Response Example:
+    * Response Body Example:
 
         ```json
         {
