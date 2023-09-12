@@ -41,7 +41,6 @@ namespace jwt_auth.Logics
 
         public static Tuple<string, string[]> ValidateToken(string token)
         {
-            string username = null;
             ClaimsPrincipal principal = GetPrincipal(token);
 
             if (principal == null)
@@ -100,17 +99,14 @@ namespace jwt_auth.Logics
             }
             catch (Exception ex)
             {
+                // if the token is expired then it will throw the exception
                 if (ex.GetType() == typeof(Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException))
-                { 
-                    
+                {
+                    throw ex;
                 }
-            }
-            catch
-            {
-                return null;
-            }
 
-            return null;
+                throw ex;
+            }
         }
     }
 }
