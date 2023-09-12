@@ -10,7 +10,7 @@ namespace jwt_auth.Logics
 {
     public class TokenManager
     {
-        // Can generate sha256 code from this link : https://codebeautify.org/sha256-hash-generator
+        // Generate sha256 code from this link : https://codebeautify.org/sha256-hash-generator
         private static string Secret = "4b0ca75423ac3389b53b8c96867bab9aca6c09e5aacefba56884604b98a33f23";
 
         public static string GenerateToken(string username, string[] role)
