@@ -28,13 +28,13 @@ The `AuthenticationController` encompasses the login and validation APIs that we
     * Response Body Example:
 
         ```json
-	{
-	    "username": "suelynn",
-	    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InN1ZWx5bm4iLCJyb2xlIjpbIlNlbmlvciBTb2Z0d2FyZSBFbmdpbmVlciIsIlByb2R1Y3QgT3duZXIiXSwibmJmIjoxNjk0NTMxNDAxLCJleHAiOjE2OTQ1MzMyMDEsImlhdCI6MTY5NDUzMTQwMX0.qqVN-K0AjVzefvvTIZvDxkVWhr_E4FnYfyJ5CwUmdgs",
+	    {
+	        "username": "suelynn",
+	        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InN1ZWx5bm4iLCJyb2xlIjpbIlNlbmlvciBTb2Z0d2FyZSBFbmdpbmVlciIsIlByb2R1Y3QgT3duZXIiXSwibmJmIjoxNjk0NTMxNDAxLCJleHAiOjE2OTQ1MzMyMDEsImlhdCI6MTY5NDUzMTQwMX0.     qqVN-K0AjVzefvvTIZvDxkVWhr_E4FnYfyJ5CwUmdgs",
     	    "role": [ "Senior Software Engineer", "Product Owner" ],
-	    "status": Success,
-	    "message": "User is valid"
-	}
+	        "status": Success,
+	        "message": "User is valid"
+	    }
         ```
 
 * POST `/authentication/validate`
@@ -49,10 +49,10 @@ The `AuthenticationController` encompasses the login and validation APIs that we
 
         ```json
         {
-	    "username": "suelynn",
-	    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InN1ZWx5bm4iLCJyb2xlIjpbIlNlbmlvciBTb2Z0d2FyZSBFbmdpbmVlciIsIlByb2R1Y3QgT3duZXIiXSwibmJmIjoxNjk0NTMxNDAxLCJleHAiOjE2OTQ1MzMyMDEsImlhdCI6MTY5NDUzMTQwMX0.qqVN-K0AjVzefvvTIZvDxkVWhr_E4FnYfyJ5CwUmdgs",
-	    "role": [ "Senior Software Engineer", "Product Owner" ],
-	    "status": Success,
-	    "message": "Token is valid"
-	}
+	        "username": "suelynn",
+	        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InN1ZWx5bm4iLCJyb2xlIjpbIlNlbmlvciBTb2Z0d2FyZSBFbmdpbmVlciIsIlByb2R1Y3QgT3duZXIiXSwibmJmIjoxNjk0NTMxNDAxLCJleHAiOjE2OTQ1MzMyMDEsImlhdCI6MTY5NDUzMTQwMX0.qqVN-K0AjVzefvvTIZvDxkVWhr_E4FnYfyJ5CwUmdgs",
+	        "role": [ "Senior Software Engineer", "Product Owner" ],
+	        "status": Success,
+	        "message": "Token is valid"
+	    }   
         ```
