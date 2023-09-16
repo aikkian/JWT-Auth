@@ -15,7 +15,7 @@ The `AuthenticationController` encompasses the login and validation APIs that we
 * POST `/authentication/login`
 
     * Returns the JWT token along with the user information from the database after the user enters their username and password.
-    * Post Http Request Link: `https://<YOUR-DOMAIN:PORT>//authentication/login`
+    * Post Http Request Link: `https://<YOUR-DOMAIN:PORT>/authentication/login`
     * Request Body Example:
 
         ```json
